@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -12,8 +13,8 @@ const HeroSection = () => {
           Your AI-powered research partner, grounded in the information you trust, built with
           our latest Gemini models.
         </p>
-        <Button variant="hero" size="lg" className="text-base px-8 py-3">
-          Try Research AI
+        <Button variant="hero" size="lg" className="text-base px-8 py-3" asChild>
+          <Link to="/app">Try Research AI</Link>
         </Button>
       </div>
     </section>
