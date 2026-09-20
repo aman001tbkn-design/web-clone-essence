@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="px-6 py-8 border-t border-border bg-background">
@@ -7,24 +9,24 @@ const Footer = () => {
             © 2024 Research AI. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a 
-              href="#" 
+            <Link 
+              to="/contact" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact Us
-            </a>
-            <a 
-              href="#" 
+            </Link>
+            <Link 
+              to="/privacy" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
-            </a>
-            <a 
-              href="#" 
+            </Link>
+            <Link 
+              to="/terms" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
